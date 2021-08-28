@@ -6,6 +6,8 @@ A simple `list-group` based typeahead/autocomplete using Bootstrap 4 and Vue 2
 
 Here are some live examples, [give them a try here.](https://mattzollinhofer.github.io/vue-typeahead-bootstrap-docs/examples/examples.html#custom-suggestion-slot)
 
+asdfasdf
+
 ## Getting Started
 [Getting started guide is here.](https://mattzollinhofer.github.io/vue-typeahead-bootstrap-docs/guide/gettingStarted.html#installation)
 
