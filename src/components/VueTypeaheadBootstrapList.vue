@@ -144,7 +144,7 @@ export default {
       const re = new RegExp(this.showAllResults ? '' : this.escapedQuery, 'gi')
 
       // Filter, sort, and concat
-      return this.data
+      const matchedItems = this.data
         .filter(i => i.text.match(re) !== null)
         .sort((a, b) => {
           if (this.disableSort) return 0
@@ -156,6 +156,10 @@ export default {
           if (aIndex > bIndex) { return 1 }
           return 0
         }).slice(0, this.maxMatches)
+      // Emit matched items to know how many items match the query.
+      // Useful when the developer wants to know if there are no matches.
+      this.$emit('matched-items', matchedItems.length)
+      return matchedItems
     }
   },
 
