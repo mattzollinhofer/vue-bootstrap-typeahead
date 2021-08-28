@@ -248,6 +248,8 @@ export default {
     },
 
     handleFocusOut(evt) {
+      this.$emit('blur', evt)
+
       const tgt = evt.relatedTarget
       if (!!navigator.userAgent.match(/Trident.*rv:11\./) && this.ieCloseFix) {
         setTimeout(() => { this.runFocusOut(tgt) }, 300)
