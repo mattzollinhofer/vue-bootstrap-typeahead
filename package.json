@@ -22,6 +22,7 @@
   "license": "MIT",
   "author": "Matt Zollinhofer <vue.typeahead.bootstrap@gmail.com>",
   "main": "src/components/VueTypeaheadBootstrap.vue",
+  "types": "src/vue-typeahead-bootstrap.d.ts",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name VueTypeaheadBootstrap src/components/VueTypeaheadBootstrap.vue",
